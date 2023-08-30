@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root "boards#index"
+  get "boards" => "boards#index"
+  get "boards/new" => "boards#new"
 end
