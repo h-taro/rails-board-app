@@ -10,7 +10,7 @@
 #  updated_at :datetime         not null
 #
 class Board < ApplicationRecord
-  has_many: comments, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   validates :name, presence: true, length: { maximum: 10 }
   validates :title, presence: true, length: { maximum: 30 }
