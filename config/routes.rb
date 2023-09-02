@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   get 'mypage', to: 'users#me'
 
-  post 'login', to: 'sessions#create'
-  delete 'logout', to: 'sessions#destroy'
+  post 'login', to: 'session#create'
+  delete 'logout', to: 'session#destroy'
 
   resources :users, only: [:new, :create]
   resources :boards
