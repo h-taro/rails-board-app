@@ -12,7 +12,9 @@
  *
  */
 
- @import "bootstrap";
- @import "base";
- @import "boards";
- @import "comments";
+@import "bootstrap";
+@import "./application/boards.scss";
+@import "./application/comments.scss";
+@import "./application/home.scss";
+@import "./application/session.scss";
+@import "./application/users.scss";
