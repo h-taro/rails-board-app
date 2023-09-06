@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_09_02_060812) do
+ActiveRecord::Schema.define(version: 2023_09_05_230516) do
 
   create_table "board_tag_relations", force: :cascade do |t|
     t.integer "board_id", null: false
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2023_09_02_060812) do
     t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "role", default: 0, null: false
     t.index ["name"], name: "index_users_on_name", unique: true
   end
 
